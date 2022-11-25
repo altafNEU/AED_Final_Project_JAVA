@@ -8,7 +8,7 @@ package Pharma;
  *
  * @author azizvohra
  */
-public class Pharma {
+public class Pharma extends UserAcc {
     public Pharma(String pharmaName, String pharmaLocation, String pharmaUserID, String pharmaPassword, String pharmaPhoneNumber) { 
         // Addition of few stuff is remaining
         setUserName(pharmaUserID);

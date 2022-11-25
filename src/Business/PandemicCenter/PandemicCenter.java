@@ -8,7 +8,7 @@ package PandemicCenter;
  *
  * @author azizvohra
  */
-public class PandemicCenter {
+public class PandemicCenter extends UserAcc {
     String userId;
     String password;
     String location;
