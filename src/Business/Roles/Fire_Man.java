@@ -12,8 +12,14 @@ import javax.swing.JPanel;
  *
  * @author altaf
  */
+
+
 public class Fire_Man {
-     public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, EcoSystem business) {
+     public JPanel createWorkArea(JPanel userProcessContainer, 
+             UserAcc account,
+             EcoSystem business) {
         return new UserAreaJPanel(userProcessContainer, account, business);
     }
+     
+     //fire_man driver file ,returns to userareaJpanel
 }

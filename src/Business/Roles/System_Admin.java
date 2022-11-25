@@ -16,5 +16,6 @@ import javax.swing.JPanel;
 public class System_Admin {
      public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, EcoSystem system) {
         return new SysAdminWorkAreaJPanel(userProcessContainer, system);
+        //simple sysadmin return for jpanel
     }
 }
