@@ -15,7 +15,10 @@ import javax.swing.JPanel;
  */
 public class Police_Officer {
 
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, EcoSystem business) {
+    public JPanel createWorkArea(JPanel userProcessContainer,
+            UserAcc account, 
+            EcoSystem business) {
         return new UserAreaJPanel(userProcessContainer, account, business);
+        
     }
 }
