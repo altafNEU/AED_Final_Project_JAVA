@@ -10,8 +10,8 @@ import Business.EcoSystem;
  *
  * @author azizvohra
  */
-public class Admin_BloodBank extends Roles{
-     public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, EcoSystem business) {
+public class Admin_PandemicTestCenter  extends Roles {
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, EcoSystem business) {
         return new UserAreaJPanel(userProcessContainer, account, business);
-    }
+    } 
 }
