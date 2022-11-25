@@ -3,10 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Business.Roles;
-
+//driver ambulance driver file
 import Business.EcoSystem;
 import Business.UserAcc.UserAcc;
 import UserInterface.user.UserAreaJPanel;
+
 import javax.swing.JPanel;
 
 /**
@@ -15,6 +16,7 @@ import javax.swing.JPanel;
  */
 public class Driver_Ambulance {
     public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, EcoSystem business) {
+        
         return new UserAreaJPanel(userProcessContainer, account, business);
     }
 }
