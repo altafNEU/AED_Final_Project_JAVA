@@ -4,13 +4,17 @@
  */
 package Business;
 
+import Business.Roles.Roles;
+import Business.Roles.System_Admin;
+import Business.userR.User_Directory;
 import java.util.ArrayList;
+import Business.UserAcc.UserAcc;
 
 /**
  *
  * @author satyajitdas
  */
-public class EcoSystem {
+public class EcoSystem extends Organization {
     
           private static EcoSystem business;
      
