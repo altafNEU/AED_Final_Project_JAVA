@@ -14,8 +14,9 @@ import javax.swing.JPanel;
  * @author altaf
  */
 public class VaccinationAdmin {
-     public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, EcoSystem business) {
-         return new UserAreaJPanel(userProcessContainer, account, business);
-     }
-     //returns vaccination_admin userarea panel
+
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, EcoSystem business) {
+        return new UserAreaJPanel(userProcessContainer, account, business);
+    }
+    //returns vaccination_admin userarea panel
 }

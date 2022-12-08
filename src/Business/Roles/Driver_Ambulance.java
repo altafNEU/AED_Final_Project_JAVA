@@ -4,6 +4,7 @@
  */
 package Business.Roles;
 //driver ambulance driver file
+
 import Business.EcoSystem;
 import Business.UserAcc.UserAcc;
 import UserInterface.user.UserAreaJPanel;
@@ -15,8 +16,9 @@ import javax.swing.JPanel;
  * @author altaf
  */
 public class Driver_Ambulance {
+
     public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, EcoSystem business) {
-        
+
         return new UserAreaJPanel(userProcessContainer, account, business);
     }
 }

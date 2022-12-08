@@ -8,12 +8,14 @@ import Business.EcoSystem;
 import Business.UserAcc.UserAcc;
 import UserInterface.user.UserAreaJPanel;
 import javax.swing.JPanel;
+
 /**
  *
  * @author altaf
  */
 public class PharmaAdmin {
-          public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, EcoSystem business) {
-         return new UserAreaJPanel(userProcessContainer, account, business);
-     }
+
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, EcoSystem business) {
+        return new UserAreaJPanel(userProcessContainer, account, business);
+    }
 }
