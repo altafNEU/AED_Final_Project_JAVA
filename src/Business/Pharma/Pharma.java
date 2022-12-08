@@ -2,7 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Pharma;
+package Business.Pharma;
+import Business.Roles.Admin_Pharmacy;
+import Business.Roles.DoctorRole;
+import Business.UserAcc.UserAcc;
+import java.util.*;
 
 /**
  *
