@@ -22,7 +22,6 @@ import javax.swing.Timer;
  *
  * @author azizvohra
  */
-
 public class SysAdminWorkAreaJPanel extends javax.swing.JPanel {
 
     /**
@@ -32,12 +31,12 @@ public class SysAdminWorkAreaJPanel extends javax.swing.JPanel {
     EcoSystem ecosystem;
     // private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
 
-    public SysAdminWorkAreaJPanel(JPanel container,EcoSystem ecosystem) {
+    public SysAdminWorkAreaJPanel(JPanel container, EcoSystem ecosystem) {
         initComponents();
-       // ecosystem = dB4OUtil.retrieveSystem();
+        // ecosystem = dB4OUtil.retrieveSystem();
         this.setSize(1920, 1080);
-        this.container=container;
-        this.ecosystem=ecosystem;
+        this.container = container;
+        this.ecosystem = ecosystem;
     }
 
     /**
@@ -288,7 +287,7 @@ public class SysAdminWorkAreaJPanel extends javax.swing.JPanel {
 
     private void hospitalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hospitalButtonActionPerformed
         // TODO add your handling code here:
-        HospitalEnterprise sy=new HospitalEnterprise(ecosystem, container);
+        HospitalEnterprise sy = new HospitalEnterprise(ecosystem, container);
         container.add(sy);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container);
@@ -297,13 +296,12 @@ public class SysAdminWorkAreaJPanel extends javax.swing.JPanel {
     private void exitLabelMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitLabelMousePressed
         // TODO add your handling code here:
 
-      
-       container.remove(this);
+        container.remove(this);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.previous(container);
-          //dB4OUtil.storeSystem(ecosystem);
+        //dB4OUtil.storeSystem(ecosystem);
         //DB4OUtil.dB4OUtil.storeSystem(ecosystem);
-       //        container.remove(this);
+        //        container.remove(this);
 //        Component[] componentArray = container.getComponents();
 //        Component component = componentArray[componentArray.length - 1];
 //        UserLogin manageSuppliersJPanel = (UserLogin) component;        
@@ -313,7 +311,7 @@ public class SysAdminWorkAreaJPanel extends javax.swing.JPanel {
 
     private void nonProfitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nonProfitButtonActionPerformed
         // TODO add your handling code here:
-        NonProfitEnterprisse sy=new NonProfitEnterprisse(ecosystem, container);
+        NonProfitEnterprisse sy = new NonProfitEnterprisse(ecosystem, container);
         container.add(sy);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container);
@@ -321,7 +319,7 @@ public class SysAdminWorkAreaJPanel extends javax.swing.JPanel {
 
     private void pharmaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pharmaButtonActionPerformed
         // TODO add your handling code here:
-        PharmaEnterprises sy=new PharmaEnterprises(ecosystem, container);
+        PharmaEnterprises sy = new PharmaEnterprises(ecosystem, container);
         container.add(sy);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container);
@@ -329,7 +327,7 @@ public class SysAdminWorkAreaJPanel extends javax.swing.JPanel {
 
     private void governmentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_governmentButtonActionPerformed
         // TODO add your handling code here:
-        GovernmentEnterprise sy=new GovernmentEnterprise(ecosystem, container);
+        GovernmentEnterprise sy = new GovernmentEnterprise(ecosystem, container);
         container.add(sy);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container);
@@ -337,7 +335,7 @@ public class SysAdminWorkAreaJPanel extends javax.swing.JPanel {
 
     private void emergencyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emergencyButtonActionPerformed
         // TODO add your handling code here:
-        EmergencyEnterprises sy=new EmergencyEnterprises(ecosystem, container);
+        EmergencyEnterprises sy = new EmergencyEnterprises(ecosystem, container);
         container.add(sy);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.next(container);

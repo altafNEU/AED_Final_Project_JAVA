@@ -29,13 +29,13 @@ public class NonProfitEnterprisse extends javax.swing.JPanel {
     private final EcoSystem system;
     Timer timer;
     MapCoordinates locationPoint;
-    
+
     private void Time() {
-                ActionListener actionListener = new ActionListener() {
+        ActionListener actionListener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Date date= new Date();
-                DateFormat timeFormat =  new SimpleDateFormat("HH:mm a");
+                Date date = new Date();
+                DateFormat timeFormat = new SimpleDateFormat("HH:mm a");
                 String time = timeFormat.format(date);
                 timeLabel.setText(time);
             }
@@ -44,13 +44,13 @@ public class NonProfitEnterprisse extends javax.swing.JPanel {
         timer.setInitialDelay(0);
         timer.start();
     }
-   
+
     public NonProfitEnterprisse(EcoSystem system, JPanel container) {
         initComponents();
         this.container = container;
         this.system = system;
         Time();
-       // displayTable();
+        // displayTable();
     }
 
     /**
@@ -264,17 +264,17 @@ public class NonProfitEnterprisse extends javax.swing.JPanel {
         add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void goBackMousePressed(java.awt.event.MouseEvent evt) {                                    
+    private void goBackMousePressed(java.awt.event.MouseEvent evt) {
         // TODO add your handling code here:
-        goBack.setBackground(new Color(213,230,249));
+        goBack.setBackground(new Color(213, 230, 249));
         container.remove(this);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.previous(container);
-    }                                   
+    }
 
     private void manageBloodBankPanelMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_manageBloodBankPanelMousePressed
         // TODO add your handling code here:
-          manageBloodBank();
+        manageBloodBank();
     }//GEN-LAST:event_manageBloodBankPanelMousePressed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -318,13 +318,12 @@ public class NonProfitEnterprisse extends javax.swing.JPanel {
 
     private void manageBloodBank() {
         //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-     manageBloodBankPanel.setBackground(new Color(213,230,249));
-         //PandemicTestCentreJPanel.setBackground(new Color(255,255,255));
-        BloodRegistration br=new BloodRegistration (system, rightSidePanel, locationPoint);
+        manageBloodBankPanel.setBackground(new Color(213, 230, 249));
+        //PandemicTestCentreJPanel.setBackground(new Color(255,255,255));
+        BloodRegistration br = new BloodRegistration(system, rightSidePanel, locationPoint);
         rightSidePanel.add(br);
         CardLayout layout = (CardLayout) rightSidePanel.getLayout();
         layout.next(rightSidePanel);
-    
-    
+
     }
 }

@@ -11,13 +11,14 @@ import java.util.ArrayList;
  * @author altaf
  */
 public class Req_BloodDir {
+
     ArrayList<Req_Blood> bloodReqDir = new ArrayList<Req_Blood>();
-    
-    public void addUserReq(Req_Blood userReq){
+
+    public void addUserReq(Req_Blood userReq) {
         bloodReqDir.add(userReq);
     }
-    
-    public void removeUserReq(Req_Blood userReq){
+
+    public void removeUserReq(Req_Blood userReq) {
         bloodReqDir.remove(userReq);
     }
 
@@ -28,5 +29,5 @@ public class Req_BloodDir {
     public void setBloodReqDir(ArrayList<Req_Blood> bloodReqDir) {
         this.bloodReqDir = bloodReqDir;
     }
-    
+
 }

@@ -17,8 +17,8 @@ public class Req_Medicine {
     int id;
     String patientId;
     String status;
-    Map<String,String> medOrderlist=new HashMap<String,String>();
-    Map<String,String> medCostlist=new HashMap<String,String>();
+    Map<String, String> medOrderlist = new HashMap<String, String>();
+    Map<String, String> medCostlist = new HashMap<String, String>();
     String DoctorName;
 
     public String getPharmaName() {
@@ -76,5 +76,5 @@ public class Req_Medicine {
     public void setDoctorName(String DoctorName) {
         this.DoctorName = DoctorName;
     }
-    
+
 }

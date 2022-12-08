@@ -11,12 +11,14 @@ import java.util.ArrayList;
  * @author altaf
  */
 public class Req_EmergencyDir {
+
     ArrayList<Req_Emergency> emergencyUserList = new ArrayList<Req_Emergency>();
-      public void addEmergencyUser(Req_Emergency user){
+
+    public void addEmergencyUser(Req_Emergency user) {
         emergencyUserList.add(user);
     }
-    
-    public void removeEmergencyUser(Req_Emergency user){
+
+    public void removeEmergencyUser(Req_Emergency user) {
         emergencyUserList.remove(user);
     }
 
@@ -27,6 +29,5 @@ public class Req_EmergencyDir {
     public void setEmergencyUserList(ArrayList<Req_Emergency> emergencyUserList) {
         this.emergencyUserList = emergencyUserList;
     }
-    
-    
+
 }

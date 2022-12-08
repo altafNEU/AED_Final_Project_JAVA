@@ -28,15 +28,15 @@ public class GovernmentEnterprise extends javax.swing.JPanel {
      */
     private final JPanel container;
     private final EcoSystem system;
-     private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
+    private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
     Timer timer;
-    
+
     private void Time() {
-                ActionListener actionListener = new ActionListener() {
+        ActionListener actionListener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Date date= new Date();
-                DateFormat timeFormat =  new SimpleDateFormat("HH:mm a");
+                Date date = new Date();
+                DateFormat timeFormat = new SimpleDateFormat("HH:mm a");
                 String time = timeFormat.format(date);
                 timeLabel.setText(time);
             }
@@ -45,8 +45,8 @@ public class GovernmentEnterprise extends javax.swing.JPanel {
         timer.setInitialDelay(0);
         timer.start();
     }
-    
-    public GovernmentEnterprise(EcoSystem system, JPanel container ) {
+
+    public GovernmentEnterprise(EcoSystem system, JPanel container) {
         initComponents();
         this.container = container;
         this.system = system;
@@ -267,11 +267,11 @@ public class GovernmentEnterprise extends javax.swing.JPanel {
     private void goBackMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_goBackMousePressed
         // TODO add your handling code here:
         // Removing the container and replacing it with the system work area panel
-        goBack.setBackground(new Color(213,230,249));
+        goBack.setBackground(new Color(213, 230, 249));
         container.remove(this);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.previous(container);
-          dB4OUtil.storeSystem(system);
+        dB4OUtil.storeSystem(system);
     }//GEN-LAST:event_goBackMousePressed
 
     private void cdcPanelMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cdcPanelMousePressed
@@ -280,10 +280,10 @@ public class GovernmentEnterprise extends javax.swing.JPanel {
     }//GEN-LAST:event_cdcPanelMousePressed
 
     private void manageGovtEnterprise() {
-         cdcPanel.setBackground(new Color(213,230,249));
+        cdcPanel.setBackground(new Color(213, 230, 249));
 //        PandemicTestCentreJPanel.setBackground(new Color(255,255,255));
 //        PandemicTestCentreJPanel.setBackground(new Color(255,255,255));
-        GovernmentRegistration gov =new GovernmentRegistration (container,system);
+        GovernmentRegistration gov = new GovernmentRegistration(container, system);
         rightSidePanel.add(gov);
         CardLayout layout = (CardLayout) rightSidePanel.getLayout();
         layout.next(rightSidePanel);

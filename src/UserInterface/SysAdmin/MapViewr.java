@@ -20,8 +20,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 //import javax.swing.SwingUtilities;
 
-
-
 /**
  *
  * @author azizvohra
@@ -31,25 +29,24 @@ public class MapViewr extends javax.swing.JPanel {
     /**
      * Creates new form MapViewr
      */   //Browser browser;
-     
     JPanel userProcessContainer;
     MapCoordinates locationPoint;
     Browser browser;
 
-   
     public MapViewr(JPanel userProcessContainer) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         locationPoint = new MapCoordinates();
-        EngineOptions options =
-                EngineOptions.newBuilder(HARDWARE_ACCELERATED).licenseKey("1BNDHFSC1G2HE4F9XRJJFQ2YTJU7NQLOVUMD0I8ERIS91V4X8YW7HI9ILGATUEM2BAB27E").build();
+        EngineOptions options
+                = EngineOptions.newBuilder(HARDWARE_ACCELERATED).licenseKey("1BNDHFSC1G2HE4F9XRJJFQ2YTJU7NQLOVUMD0I8ERIS91V4X8YW7HI9ILGATUEM2BAB27E").build();
         Engine engine = Engine.newInstance(options);
         browser = engine.newBrowser();
         BrowserView view = BrowserView.newInstance(browser);
         browser.navigation().loadUrl("https://www.google.com/maps");
-        
+
         mapCanvas.add(view, "a");
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -118,7 +115,7 @@ public class MapViewr extends javax.swing.JPanel {
 //        // TODO add your handling code here:
         try {
 //
-            if (browser.url()!= null) {
+            if (browser.url() != null) {
                 System.out.println(browser.url());
                 String[] a = browser.url().split("!3d", 0);
                 String[] b = a[1].split("!4d");
@@ -132,31 +129,30 @@ public class MapViewr extends javax.swing.JPanel {
             userProcessContainer.remove(this);
 
             Component[] componentArray = userProcessContainer.getComponents();
-            System.out.println(userProcessContainer.getComponent(componentArray.length-1) + "component");
+            System.out.println(userProcessContainer.getComponent(componentArray.length - 1) + "component");
             if (userProcessContainer.getComponent(componentArray.length - 1) instanceof PandemicRegistration) {
                 PandemicRegistration orgManagement = (PandemicRegistration) userProcessContainer.getComponent(componentArray.length - 1);
                 orgManagement.populateLongituteLatitude(locationPoint);
             } else if (userProcessContainer.getComponent(componentArray.length - 1) instanceof PharmacyRegistration) {
-                PharmacyRegistration pharmaRegistration = (PharmacyRegistration) userProcessContainer.getComponent(componentArray.length -1);
+                PharmacyRegistration pharmaRegistration = (PharmacyRegistration) userProcessContainer.getComponent(componentArray.length - 1);
                 pharmaRegistration.populateLongituteLatitude(locationPoint);
             } else if (userProcessContainer.getComponent(componentArray.length - 1) instanceof PoliceRegistration) {
-                PoliceRegistration policeRegistration = (PoliceRegistration) userProcessContainer.getComponent(componentArray.length -1);
+                PoliceRegistration policeRegistration = (PoliceRegistration) userProcessContainer.getComponent(componentArray.length - 1);
                 policeRegistration.populateLongituteLatitude(locationPoint);
-            }else if (userProcessContainer.getComponent(componentArray.length - 1) instanceof FireDepartmentRegistration) {
-                FireDepartmentRegistration fireDept = (FireDepartmentRegistration) userProcessContainer.getComponent(componentArray.length -1);
+            } else if (userProcessContainer.getComponent(componentArray.length - 1) instanceof FireDepartmentRegistration) {
+                FireDepartmentRegistration fireDept = (FireDepartmentRegistration) userProcessContainer.getComponent(componentArray.length - 1);
                 fireDept.populateLongituteLatitude(locationPoint);
-            }else if (userProcessContainer.getComponent(componentArray.length - 1) instanceof BloodRegistration) {
-                BloodRegistration fireDept = (BloodRegistration) userProcessContainer.getComponent(componentArray.length -1);
+            } else if (userProcessContainer.getComponent(componentArray.length - 1) instanceof BloodRegistration) {
+                BloodRegistration fireDept = (BloodRegistration) userProcessContainer.getComponent(componentArray.length - 1);
                 fireDept.populateLongituteLatitude(locationPoint);
             } else if (userProcessContainer.getComponent(componentArray.length - 1) instanceof EmergencyReport) {
                 EmergencyReport emergencyReport = (EmergencyReport) userProcessContainer.getComponent(componentArray.length - 1);
                 emergencyReport.populateLongituteLatitude(locationPoint);
-            }
-            else {
-                                System.out.println("ELSE LOCATION " + componentArray.length);
+            } else {
+                System.out.println("ELSE LOCATION " + componentArray.length);
                 System.out.println("ELSE CONTAINER " + userProcessContainer.toString());
             }
-                        
+
 //            if (userProcessContainer.getComponent(componentArray.length - 1) instanceof EmergencyManageOrganizationJPanel) {
 //                EmergencyManageOrganizationJPanel orgManagement = (EmergencyManageOrganizationJPanel) userProcessContainer.getComponent(componentArray.length - 1);
 //                orgManagement.populateLongituteLatitude(locationPoint);
@@ -188,13 +184,12 @@ public class MapViewr extends javax.swing.JPanel {
 //                System.out.println("ELSE LOCATION " + componentArray.length);
 //                System.out.println("ELSE CONTAINER " + userProcessContainer.toString());
 //            }
-
             CardLayout layout = (CardLayout) userProcessContainer.getLayout();
             layout.previous(userProcessContainer);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Set Position first");
         }
-               
+
     }//GEN-LAST:event_setLocationBtnActionPerformed
 
 

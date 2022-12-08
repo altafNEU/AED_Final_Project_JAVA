@@ -8,8 +8,9 @@ package Business.WorkQueue;
  *
  * @author altaf
  */
-public class Req_LabTest extends WorkRequest{
-      private String labTestResult;
+public class Req_LabTest extends WorkRequest {
+
+    private String labTestResult;
 
     public String getLabTestResult() {
         return labTestResult;
@@ -18,5 +19,5 @@ public class Req_LabTest extends WorkRequest{
     public void setLabTestResult(String labTestResult) {
         this.labTestResult = labTestResult;
     }
-      
+
 }

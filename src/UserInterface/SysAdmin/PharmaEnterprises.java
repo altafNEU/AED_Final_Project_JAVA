@@ -30,13 +30,13 @@ public class PharmaEnterprises extends javax.swing.JPanel {
     private final EcoSystem system;
     Timer timer;
     MapCoordinates locationPoint;
-    
+
     private void Time() {
         ActionListener actionListener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Date date= new Date();
-                DateFormat timeFormat =  new SimpleDateFormat("HH:mm a");
+                Date date = new Date();
+                DateFormat timeFormat = new SimpleDateFormat("HH:mm a");
                 String time = timeFormat.format(date);
                 timeLabel.setText(time);
             }
@@ -264,20 +264,20 @@ public class PharmaEnterprises extends javax.swing.JPanel {
         add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void goBackMousePressed(java.awt.event.MouseEvent evt) {                                    
+    private void goBackMousePressed(java.awt.event.MouseEvent evt) {
         // TODO add your handling code here:
-        goBack.setBackground(new Color(213,230,249));
+        goBack.setBackground(new Color(213, 230, 249));
         container.remove(this);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.previous(container);
-    }                                   
+    }
 
     private void managePharmaciesMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_managePharmaciesMousePressed
         // TODO add your handling code here:
-       managePharmacy();
+        managePharmacy();
     }//GEN-LAST:event_managePharmaciesMousePressed
-  
-    
+
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel goBack;
     private javax.swing.JLabel jLabel1;
@@ -319,12 +319,12 @@ public class PharmaEnterprises extends javax.swing.JPanel {
 
     private void managePharmacy() {
         //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    managePharmacies.setBackground(new Color(213,230,249));
+        managePharmacies.setBackground(new Color(213, 230, 249));
         //255,255,255 PandemicTestCentreJPanel
-        PharmacyRegistration pcr=new PharmacyRegistration (system, rightSidePanel, locationPoint);
+        PharmacyRegistration pcr = new PharmacyRegistration(system, rightSidePanel, locationPoint);
         rightSidePanel.add(pcr);
         CardLayout layout = (CardLayout) rightSidePanel.getLayout();
         layout.next(rightSidePanel);
-    
+
     }
 }

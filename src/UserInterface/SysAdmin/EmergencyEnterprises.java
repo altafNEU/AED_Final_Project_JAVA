@@ -30,15 +30,15 @@ public class EmergencyEnterprises extends javax.swing.JPanel {
     private final JPanel container;
     MapCoordinates locationPoint;
     private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
-    
+
     Timer timer;
-    
+
     private void Time() {
-                ActionListener actionListener = new ActionListener() {
+        ActionListener actionListener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Date date= new Date();
-                DateFormat timeFormat =  new SimpleDateFormat("HH:mm a");
+                Date date = new Date();
+                DateFormat timeFormat = new SimpleDateFormat("HH:mm a");
                 String time = timeFormat.format(date);
                 timeLabel.setText(time);
             }
@@ -47,8 +47,7 @@ public class EmergencyEnterprises extends javax.swing.JPanel {
         timer.setInitialDelay(0);
         timer.start();
     }
-    
-    
+
     public EmergencyEnterprises(EcoSystem system, JPanel container) {
         initComponents();
         this.system = system;
@@ -313,7 +312,7 @@ public class EmergencyEnterprises extends javax.swing.JPanel {
 
     private void goBackButtonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_goBackButtonMousePressed
         // TODO add your handling code here:
-        goBackButton.setBackground(new Color(213,230,249));
+        goBackButton.setBackground(new Color(213, 230, 249));
         container.remove(this);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.previous(container);
@@ -323,29 +322,29 @@ public class EmergencyEnterprises extends javax.swing.JPanel {
     private void ambulancePanelMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ambulancePanelMousePressed
         // TODO add your handling code here
         manageEmergencyEnterpriseAmbulance();
-        
+
     }//GEN-LAST:event_ambulancePanelMousePressed
 
     private void manageEmergencyEnterpriseAmbulance() {
-        ambulancePanel.setBackground(new Color(213,230,249));
-        policePanel.setBackground(new Color(255,255,255));
-        fireDeptPanel.setBackground(new Color(255,255,255));
-        AmbulanceRegistration amb =new AmbulanceRegistration(system,container);
+        ambulancePanel.setBackground(new Color(213, 230, 249));
+        policePanel.setBackground(new Color(255, 255, 255));
+        fireDeptPanel.setBackground(new Color(255, 255, 255));
+        AmbulanceRegistration amb = new AmbulanceRegistration(system, container);
         rightSidePanel.add(amb);
         CardLayout layout = (CardLayout) rightSidePanel.getLayout();
         layout.next(rightSidePanel);
     }
-    
+
     private void policePanelMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_policePanelMousePressed
         // TODO add your handling code here:
         manageEmergencyEnterprisePolice();
     }//GEN-LAST:event_policePanelMousePressed
 
     private void manageEmergencyEnterprisePolice() {
-        ambulancePanel.setBackground(new Color(255,255,255));
-        policePanel.setBackground(new Color(213,230,249));
-        fireDeptPanel.setBackground(new Color(255,255,255));
-        PoliceRegistration amb =new PoliceRegistration(system,rightSidePanel, locationPoint);
+        ambulancePanel.setBackground(new Color(255, 255, 255));
+        policePanel.setBackground(new Color(213, 230, 249));
+        fireDeptPanel.setBackground(new Color(255, 255, 255));
+        PoliceRegistration amb = new PoliceRegistration(system, rightSidePanel, locationPoint);
         rightSidePanel.add(amb);
         CardLayout layout = (CardLayout) rightSidePanel.getLayout();
         layout.next(rightSidePanel);
@@ -356,10 +355,10 @@ public class EmergencyEnterprises extends javax.swing.JPanel {
     }//GEN-LAST:event_fireDeptPanelMousePressed
 
     private void manageEmergencyEnterpriseFire() {
-        ambulancePanel.setBackground(new Color(255,255,255));
-        policePanel.setBackground(new Color(255,255,255));
-        fireDeptPanel.setBackground(new Color(213,230,249));
-        FireDepartmentRegistration amb =new FireDepartmentRegistration(system,rightSidePanel, locationPoint);
+        ambulancePanel.setBackground(new Color(255, 255, 255));
+        policePanel.setBackground(new Color(255, 255, 255));
+        fireDeptPanel.setBackground(new Color(213, 230, 249));
+        FireDepartmentRegistration amb = new FireDepartmentRegistration(system, rightSidePanel, locationPoint);
         rightSidePanel.add(amb);
         CardLayout layout = (CardLayout) rightSidePanel.getLayout();
         layout.next(rightSidePanel);
