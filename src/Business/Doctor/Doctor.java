@@ -4,19 +4,23 @@
  */
 package Business.Doctor;
 
+import Business.Roles.DoctorRole;
+import Business.UserAcc.UserAcc;
+
 /**
  *
  * @author altaf
  */
 public class Doctor {
+
     String userId;
-     String accPassword;
+    String accPassword;
     String firstName;
     String specialization;
     String phoneNum;
     String hospital;
 
-    public Doctor( String firstName,  String hospital,String specialization,String userId, String accPassword,String phoneNum) {
+    public Doctor(String firstName, String hospital, String specialization, String userId, String accPassword, String phoneNum) {
         setUserName(userId);
         setPwd(accPassword);
         setRole(new DoctorRole());
@@ -51,8 +55,6 @@ public class Doctor {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-
-
 
     public String getPhoneNum() {
         return phoneNum;
