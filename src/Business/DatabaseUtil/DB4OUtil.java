@@ -4,19 +4,28 @@
  */
 package Business.DatabaseUtil;
 
+//import Business.ConfigureASystem;
+import java.nio.file.Paths;
 import Business.EcoSystem;
 import Business.SystemConfig;
+import com.db4o.Db4oEmbedded;
+import com.db4o.ObjectContainer;
+import com.db4o.ObjectSet;
+import com.db4o.config.EmbeddedConfiguration;
+import com.db4o.ta.TransparentPersistenceSupport;
+import java.nio.file.Paths;
 
 /**
  *
  * @author altaf
  */
 public class DB4OUtil {
+
     private static final String FILENAME = Paths.get("Databank.db4o").toAbsolutePath().toString();// path to the data store
     private static DB4OUtil dB4OUtil;
-    
-    public synchronized static DB4OUtil getInstance(){
-        if (dB4OUtil == null){
+
+    public synchronized static DB4OUtil getInstance() {
+        if (dB4OUtil == null) {
             dB4OUtil = new DB4OUtil();
         }
         return dB4OUtil;
@@ -42,7 +51,6 @@ public class DB4OUtil {
             //Register your top most Class here
             config.common().objectClass(EcoSystem.class).cascadeOnUpdate(true); // Change to the object you want to save
 
-           
             return db;
         } catch (Exception ex) {
             System.out.print(ex.getMessage());
@@ -56,15 +64,14 @@ public class DB4OUtil {
         conn.commit();
         conn.close();
     }
-    
-    public EcoSystem retrieveSystem(){
-        ObjectContainer conn = createConnection();          
+
+    public EcoSystem retrieveSystem() {
+        ObjectContainer conn = createConnection();
         ObjectSet<EcoSystem> systems = conn.query(EcoSystem.class); // Change to the object you want to save
         EcoSystem system;
-        if (systems.size() == 0){
+        if (systems.size() == 0) {
             system = SystemConfig.SysConfigure();  // If there's no System in the record, create a new one
-        }
-        else{
+        } else {
             system = systems.get(systems.size() - 1);
         }
         conn.close();
