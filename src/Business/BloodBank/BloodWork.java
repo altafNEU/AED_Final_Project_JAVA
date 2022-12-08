@@ -4,23 +4,26 @@
  */
 package Business.BloodBank;
 
+import Business.Roles.Admin_BloodBank;
+import Business.UserAcc.UserAcc;
+import java.util.*;
+
 /**
  *
  * @author altaf
  */
-public class BloodWork extends UserAcc{
-     // Blood work class for the hospitals
-    
-     Map<String, Integer> labMap = new HashMap<String, Integer>();
-     String userId;
+public class BloodWork extends UserAcc {
+    // Blood work class for the hospitals
+
+    Map<String, Integer> labMap = new HashMap<String, Integer>();
+    String userId;
     String password;
     String userNames;
     String userLocation;
     String userPhone;
-   
-       
+
     public BloodWork(String userNames, String userLocation, String userId, String password, String userPhone) {
-       setUserName(userId);
+        setUserName(userId);
         setPwd(password);
         setRole(new Admin_BloodBank());
         this.userNames = userNames;
@@ -29,7 +32,7 @@ public class BloodWork extends UserAcc{
         this.userId = userId;
         this.password = password;
     }
-    
+
     // Generate the getter and setter method the variables
     public String getUserNames() {
         return userNames;
@@ -63,9 +66,6 @@ public class BloodWork extends UserAcc{
         this.userId = userId;
     }
 
-   
-    
-
     public String getPassword() {
         return password;
     }
@@ -82,5 +82,4 @@ public class BloodWork extends UserAcc{
         this.labMap = labMap;
     }
 
- 
 }
