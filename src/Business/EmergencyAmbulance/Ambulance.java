@@ -4,19 +4,23 @@
  */
 package Business.EmergencyAmbulance;
 
-/** s
+import Business.Roles.Driver_Ambulance;
+import Business.UserAcc.UserAcc;
+
+/**
  *
  * @author altaf
  */
 public class Ambulance {
-      String user_Id;
+
+    String user_Id;
     String pwd;
     String ambulanceServName;
     String nameDriver;
     String phNum;
 
-    public Ambulance(String user_Id,String pwd,String ambulanceServName,String nameDriver,String phNum) {
-        
+    public Ambulance(String user_Id, String pwd, String ambulanceServName, String nameDriver, String phNum) {
+
         this.user_Id = user_Id;
         this.pwd = pwd;
         this.ambulanceServName = ambulanceServName;
