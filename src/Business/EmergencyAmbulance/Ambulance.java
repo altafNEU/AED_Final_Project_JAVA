@@ -11,7 +11,7 @@ import Business.UserAcc.UserAcc;
  *
  * @author altaf
  */
-public class Ambulance {
+public class Ambulance extends UserAcc {
 
     String user_Id;
     String pwd;

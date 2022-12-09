@@ -11,7 +11,7 @@ import Business.UserAcc.UserAcc;
  *
  * @author altaf
  */
-public class Doctor {
+public class Doctor extends UserAcc {
 
     String userId;
     String accPassword;

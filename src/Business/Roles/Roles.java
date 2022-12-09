@@ -13,7 +13,7 @@ import javax.swing.JPanel;
  *
  * @author altaf
  */
-public class Roles {
+public abstract class Roles {
 
     public abstract JPanel createWorkArea(JPanel userProcessContainer,
             UserAcc account,

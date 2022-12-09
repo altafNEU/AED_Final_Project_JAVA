@@ -38,7 +38,7 @@ public class MapViewr extends javax.swing.JPanel {
         this.userProcessContainer = userProcessContainer;
         locationPoint = new MapCoordinates();
         EngineOptions options
-                = EngineOptions.newBuilder(HARDWARE_ACCELERATED).licenseKey("1BNDHFSC1G2HE4F9XRJJFQ2YTJU7NQLOVUMD0I8ERIS91V4X8YW7HI9ILGATUEM2BAB27E").build();
+                = EngineOptions.newBuilder(HARDWARE_ACCELERATED).licenseKey("6P830J66YBX4K4T23MK7PO6PO66ADMBK1VPQ7A2G6T59FH2WI0L5NPEGHUZ96ZYCMGAX").build();
         Engine engine = Engine.newInstance(options);
         browser = engine.newBrowser();
         BrowserView view = BrowserView.newInstance(browser);
