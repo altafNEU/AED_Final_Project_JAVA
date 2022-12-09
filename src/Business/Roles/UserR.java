@@ -13,7 +13,7 @@ import javax.swing.JPanel;
  *
  * @author altaf
  */
-public class UserR {
+public class UserR extends Roles {
 
     public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, EcoSystem business) {
         return new UserAreaJPanel(userProcessContainer, account, business);

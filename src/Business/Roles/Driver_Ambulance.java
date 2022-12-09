@@ -15,7 +15,7 @@ import javax.swing.JPanel;
  *
  * @author altaf
  */
-public class Driver_Ambulance {
+public class Driver_Ambulance extends Roles {
 
     public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, EcoSystem business) {
 

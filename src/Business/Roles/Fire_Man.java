@@ -14,7 +14,7 @@ import javax.swing.JPanel;
  * @author altaf
  */
 
-public class Fire_Man {
+public class Fire_Man extends Roles {
 
     public JPanel createWorkArea(JPanel userProcessContainer,
             UserAcc account,

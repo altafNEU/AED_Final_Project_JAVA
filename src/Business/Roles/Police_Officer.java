@@ -13,7 +13,7 @@ import javax.swing.JPanel;
  *
  * @author altaf
  */
-public class Police_Officer {
+public class Police_Officer extends Roles {
 
     public JPanel createWorkArea(JPanel userProcessContainer,
             UserAcc account,
