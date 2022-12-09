@@ -15,48 +15,48 @@ import edu.northeastern.Business.UserAcc.UserAcc;
  * @author satyajitdas
  */
 public class EcoSystem extends Organization {
-    
-      private static EcoSystem business;
+
+    private static EcoSystem business;
 //      private ArrayList<UserAcc> userAccList;
 //      private User_Directory userDir;
-     
-     public EcoSystem( User_Directory userDir) {
 
-        this.userDir=userDir;
-        
+    public EcoSystem(User_Directory userDir) {
+
+        this.userDir = userDir;
+
     }
-     
-     public boolean checkIfUserIsUnique(String userName){
+
+    public boolean checkIfUserIsUnique(String userName) {
 //         for (UserAcc ua : userAccList){
 //            if (ua.getUserName().equals(userName))
 //            return false;
 //        }
         return true;
-         
-    }
-    
-    
-      public static EcoSystem getInstance(){
-        if(business==null){
-            business=new EcoSystem();
-        }
-        return business;
-        
-    }
-      public static void setInstance(EcoSystem system) {	
-        business = system;	
-    }
-    
-    private EcoSystem(){
-        super(null);
-   
+
     }
 
-       @Override
+    public static EcoSystem getInstance() {
+        if (business == null) {
+            business = new EcoSystem();
+        }
+        return business;
+
+    }
+
+    public static void setInstance(EcoSystem system) {
+        business = system;
+    }
+
+    private EcoSystem() {
+        super(null);
+
+    }
+
+    @Override
     public ArrayList<Roles> getRoleSupported() {
-        ArrayList<Roles> rolesList=new ArrayList<>();
+        ArrayList<Roles> rolesList = new ArrayList<>();
         rolesList.add(new System_Admin());
         return rolesList;
     }
-    
+
 }
