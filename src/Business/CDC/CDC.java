@@ -6,11 +6,14 @@ package Business.CDC;
 
 import Business.Roles.Officer_CDC;
 import Business.UserAcc.UserAcc;
+
 /**
  *
  * @author azizvohra
  */
+
 public class CDC extends UserAcc {
+    
     // variable which is used to set everything
     public CDC(String firstName, String secondName, String userID, String userPassword, String phoneNumber) {
         setUserName(userID);
