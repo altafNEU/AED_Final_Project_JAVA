@@ -77,6 +77,7 @@ public class BloodDonations extends javax.swing.JPanel {
         appointmentTimeLabel = new javax.swing.JLabel();
         bloodBox = new javax.swing.JComboBox<>();
         timeBox = new javax.swing.JComboBox<>();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
 
         setBackground(new java.awt.Color(250, 249, 251));
         setPreferredSize(new java.awt.Dimension(1160, 750));
@@ -181,6 +182,7 @@ public class BloodDonations extends javax.swing.JPanel {
 
         timeBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "09:00 - 10:00", "10:00 - 11:00", "11:00 - 12:00", "12:00 - 13:00", "13:00 - 14:00", "14:00 - 15:00", "15:00 - 16:00", "16:00 - 17:00", "17:00 - 18:00", "19:00 - 20:00" }));
         jPanel7.add(timeBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, 420, 40));
+        jPanel7.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 420, 40));
 
         jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 90, 470, 630));
 
@@ -299,6 +301,7 @@ public class BloodDonations extends javax.swing.JPanel {
     private javax.swing.JButton cancelButton;
     private javax.swing.JTextField firstNameField;
     private javax.swing.JLabel firstNameLabel;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel9;
