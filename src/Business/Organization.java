@@ -31,7 +31,7 @@ import java.util.ArrayList;
  *
  * @author satyajitdas
  */
-abstract class Organization {
+abstract class Organization{
      private String name;
     private WorkQueue workQueue;
    
@@ -57,6 +57,13 @@ abstract class Organization {
      OutbreakTracerDir outbreakStatusDir;
      Req_BloodDir reqBloodDir;
      
+//            outbreakStatusDir = new outbreakStatusDir();
+//        reqBloodDir=new reqBloodDir();
+//         emergencyReqDir = new Req_EmergencyDir();
+//        bloodBankDir = new bloodBankDir();
+//        medicineReqDir = new  Req_MedicineDir();
+//        checkApplication = new checkApplication();
+//        
      
      private int organizationID;
     private static int counter=0; 
@@ -378,9 +385,13 @@ abstract class Organization {
     }
    
    
+   
+   
+   
     @Override
     public String toString() {
         return name;
     }
 
+    
 }

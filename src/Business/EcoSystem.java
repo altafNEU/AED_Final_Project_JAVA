@@ -10,13 +10,22 @@ import Business.userR.User_Directory;
 import java.util.ArrayList;
 import Business.UserAcc.UserAcc;
 
+
+import Business.Roles.Roles;
+import Business.Roles.System_Admin;
+import Business.userR.User_Directory;
+import java.util.ArrayList;
+import Business.UserAcc.UserAcc;
+
 /**
  *
  * @author satyajitdas
  */
 public class EcoSystem extends Organization {
     
-          private static EcoSystem business;
+      private static EcoSystem business;
+//      private ArrayList<UserAcc> userAccList;
+//      private User_Directory userDir;
      
      public EcoSystem( User_Directory userDir) {
 
@@ -56,4 +65,5 @@ public class EcoSystem extends Organization {
         rolesList.add(new System_Admin());
         return rolesList;
     }
+    
 }

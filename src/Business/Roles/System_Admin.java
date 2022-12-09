@@ -13,7 +13,7 @@ import javax.swing.JPanel;
  *
  * @author altaf
  */
-public class System_Admin {
+public class System_Admin extends Roles{
 
     public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, EcoSystem system) {
         return new SysAdminWorkAreaJPanel(userProcessContainer, system);
