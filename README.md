@@ -43,7 +43,7 @@ Each enterprise has different organizations.
 * Fire Department
 * Police Department
 * Ambulance Services
-Advanced features used in the project:
+6. Advanced features used in the project:
 * Email notification
 * Graphs – Pie charts and bar graphs
 * Calendar date choosing.
