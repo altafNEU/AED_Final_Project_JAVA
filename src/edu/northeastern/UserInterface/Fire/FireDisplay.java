@@ -57,7 +57,6 @@ public class FireDisplay extends javax.swing.JPanel {
         closeCase = new javax.swing.JButton();
         falseAlarm = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        locationButton = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(250, 249, 251));
         setPreferredSize(new java.awt.Dimension(1160, 750));
@@ -125,18 +124,6 @@ public class FireDisplay extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("SF Pro Display", 1, 24)); // NOI18N
         jLabel1.setText("Fire emergency details");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 31, -1, -1));
-
-        locationButton.setBackground(new java.awt.Color(172, 142, 104));
-        locationButton.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
-        locationButton.setForeground(new java.awt.Color(255, 255, 255));
-        locationButton.setText("View Location");
-        locationButton.setBorder(null);
-        locationButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                locationButtonActionPerformed(evt);
-            }
-        });
-        jPanel1.add(locationButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 590, 180, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -291,45 +278,39 @@ public class FireDisplay extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_respondButtonActionPerformed
 
-    private void locationButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_locationButtonActionPerformed
-        // TODO add your handling code here:
-        showMap();
-
-    }//GEN-LAST:event_locationButtonActionPerformed
-
     private void showMap() {
-          DefaultTableModel  table2 = (DefaultTableModel) jTable1.getModel();
-        int selectedRow=jTable1.getSelectedRow();
-        if(selectedRow>=0)
-        {       
-        int rowId = Integer.parseInt(table2.getValueAt(selectedRow, 0).toString());
-        Req_EmergencyDir reqEmergencyDirectory=system.getEmergencyReqDir();
-        ArrayList<Req_Emergency> reqEmergencyList = reqEmergencyDirectory.getEmergencyUserList();
-        int size= reqEmergencyList.size();
-        Fire police =(Fire) userAcc;
-        for(int i=0;i<size;i++)
-        {
-            Req_Emergency emergency = reqEmergencyList.get(i);
-            if(rowId ==emergency.getId())
-            {
-                locationCordinate = emergency.getLocation();
-            }
-
-        }
-        String [] parts = locationCordinate.split(",");
-        String lattitude = parts[0].replaceAll("\\s","");
-        String longitude = parts[1].replaceAll("\\s","");
-        
-        MapViewerTwo oLJP = new MapViewerTwo(container, lattitude, longitude);
-        container.add("MapViewr", oLJP);
-        CardLayout layout = (CardLayout) container.getLayout();
-        layout.next(container);
-        }
-        else
-        {
-            JOptionPane.showMessageDialog(null, "Select A Row!!");
-        }
-        
+//          DefaultTableModel  table2 = (DefaultTableModel) jTable1.getModel();
+//        int selectedRow=jTable1.getSelectedRow();
+//        if(selectedRow>=0)
+//        {       
+//        int rowId = Integer.parseInt(table2.getValueAt(selectedRow, 0).toString());
+//        Req_EmergencyDir reqEmergencyDirectory=system.getEmergencyReqDir();
+//        ArrayList<Req_Emergency> reqEmergencyList = reqEmergencyDirectory.getEmergencyUserList();
+//        int size= reqEmergencyList.size();
+//        Fire police =(Fire) userAcc;
+//        for(int i=0;i<size;i++)
+//        {
+//            Req_Emergency emergency = reqEmergencyList.get(i);
+//            if(rowId ==emergency.getId())
+//            {
+//                locationCordinate = emergency.getLocation();
+//            }
+//
+//        }
+//        String [] parts = locationCordinate.split(",");
+//        String lattitude = parts[0].replaceAll("\\s","");
+//        String longitude = parts[1].replaceAll("\\s","");
+//        
+//        MapViewerTwo oLJP = new MapViewerTwo(container, lattitude, longitude);
+//        container.add("MapViewr", oLJP);
+//        CardLayout layout = (CardLayout) container.getLayout();
+//        layout.next(container);
+//        }
+//        else
+//        {
+//            JOptionPane.showMessageDialog(null, "Select A Row!!");
+//        }
+//        
         
         
 //        String [] parts = locationCordinate.split(",");
@@ -372,7 +353,6 @@ public class FireDisplay extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JButton locationButton;
     private javax.swing.JButton respondButton;
     // End of variables declaration//GEN-END:variables
 }

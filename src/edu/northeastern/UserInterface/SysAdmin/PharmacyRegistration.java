@@ -97,7 +97,6 @@ public class PharmacyRegistration extends javax.swing.JPanel {
         userNameTextField7 = new javax.swing.JTextField();
         locationInputField = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        searchButton = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         pharmaLabel = new javax.swing.JLabel();
@@ -248,24 +247,12 @@ public class PharmacyRegistration extends javax.swing.JPanel {
         jPanel7.add(userNameTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, 420, 40));
 
         locationInputField.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
-        jPanel7.add(locationInputField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 210, 40));
+        jPanel7.add(locationInputField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 350, 40));
 
         jLabel8.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(73, 84, 90));
         jLabel8.setText("Location");
         jPanel7.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 220, -1));
-
-        searchButton.setBackground(new java.awt.Color(255, 55, 95));
-        searchButton.setFont(new java.awt.Font("SF Pro Text", 1, 14)); // NOI18N
-        searchButton.setForeground(new java.awt.Color(255, 255, 255));
-        searchButton.setText("Search");
-        searchButton.setBorder(null);
-        searchButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchButtonActionPerformed(evt);
-            }
-        });
-        jPanel7.add(searchButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 190, 150, 39));
 
         jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 90, 470, 630));
 
@@ -468,14 +455,6 @@ public class PharmacyRegistration extends javax.swing.JPanel {
     }
 
 
-    private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButtonActionPerformed
-        // TODO add your handling code here:
-        MapViewr oLJP = new MapViewr(rightSidePanel);
-        rightSidePanel.add("MapViewr", oLJP);
-        CardLayout layout = (CardLayout) rightSidePanel.getLayout();
-        layout.next(rightSidePanel);
-    }//GEN-LAST:event_searchButtonActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addButton;
@@ -504,7 +483,6 @@ public class PharmacyRegistration extends javax.swing.JPanel {
     private javax.swing.JTextField locationInputField;
     private javax.swing.JLabel locationLabel;
     private javax.swing.JLabel pharmaLabel;
-    private javax.swing.JButton searchButton;
     private javax.swing.JButton updateButton;
     private javax.swing.JTextField userNameTextField4;
     private javax.swing.JTextField userNameTextField5;

@@ -51,7 +51,6 @@ public class AmbulanceDisplay extends javax.swing.JPanel {
         bookButton2 = new javax.swing.JButton();
         closeCaseButton = new javax.swing.JButton();
         respondButton = new javax.swing.JButton();
-        locationButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
 
@@ -101,18 +100,6 @@ public class AmbulanceDisplay extends javax.swing.JPanel {
             }
         });
         falseAlarm.add(respondButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 590, 180, 50));
-
-        locationButton.setBackground(new java.awt.Color(172, 142, 104));
-        locationButton.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
-        locationButton.setForeground(new java.awt.Color(255, 255, 255));
-        locationButton.setText("View Location");
-        locationButton.setBorder(null);
-        locationButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                locationButtonActionPerformed(evt);
-            }
-        });
-        falseAlarm.add(locationButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 590, 180, 50));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -286,46 +273,40 @@ public class AmbulanceDisplay extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_respondButtonActionPerformed
 
-    private void locationButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_locationButtonActionPerformed
-        // TODO add your handling code here:
-        showMap();
-
-    }//GEN-LAST:event_locationButtonActionPerformed
-
       
     private void showMap() {
-        DefaultTableModel table = (DefaultTableModel) jTable1.getModel();
-        int selectedRow=jTable1.getSelectedRow();
-        if(selectedRow>=0)
-        {
-        int s=Integer.parseInt(table.getValueAt(selectedRow, 0).toString());
-        
-        Req_EmergencyDir requestemergencyDir=system.getEmergencyReqDir();
-        ArrayList<Req_Emergency> emergencies = requestemergencyDir.getEmergencyUserList();
-        int size = emergencies.size();
-        for(int i=0;i<size;i++)
-        {
-            Req_Emergency emergency = emergencies.get(i);
-            if(s==emergency.getId()/*&&emergency.getStatus().matches("Deliver Man Assigned")*/)
-            {
-                locationCordinate = emergency.getLocation();
-
-            }
-
-        }
-        String [] parts = locationCordinate.split(",");
-        String lattitude = parts[0].replaceAll("\\s","");
-        String longitude = parts[1].replaceAll("\\s","");
-        
-        MapViewerTwo oLJP = new MapViewerTwo(container, lattitude, longitude);
-        container.add("MapViewr", oLJP);
-        CardLayout layout = (CardLayout) container.getLayout();
-        layout.next(container);
-        }
-        else
-        {
-            JOptionPane.showMessageDialog(null, "Select A Row!!");
-        }    
+//        DefaultTableModel table = (DefaultTableModel) jTable1.getModel();
+//        int selectedRow=jTable1.getSelectedRow();
+//        if(selectedRow>=0)
+//        {
+//        int s=Integer.parseInt(table.getValueAt(selectedRow, 0).toString());
+//        
+//        Req_EmergencyDir requestemergencyDir=system.getEmergencyReqDir();
+//        ArrayList<Req_Emergency> emergencies = requestemergencyDir.getEmergencyUserList();
+//        int size = emergencies.size();
+//        for(int i=0;i<size;i++)
+//        {
+//            Req_Emergency emergency = emergencies.get(i);
+//            if(s==emergency.getId()/*&&emergency.getStatus().matches("Deliver Man Assigned")*/)
+//            {
+//                locationCordinate = emergency.getLocation();
+//
+//            }
+//
+//        }
+//        String [] parts = locationCordinate.split(",");
+//        String lattitude = parts[0].replaceAll("\\s","");
+//        String longitude = parts[1].replaceAll("\\s","");
+//        
+//        MapViewerTwo oLJP = new MapViewerTwo(container, lattitude, longitude);
+//        container.add("MapViewr", oLJP);
+//        CardLayout layout = (CardLayout) container.getLayout();
+//        layout.next(container);
+//        }
+//        else
+//        {
+//            JOptionPane.showMessageDialog(null, "Select A Row!!");
+//        }    
     }
     
     public void populateTable()
@@ -361,7 +342,6 @@ public class AmbulanceDisplay extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JButton locationButton;
     private javax.swing.JButton respondButton;
     // End of variables declaration//GEN-END:variables
 }

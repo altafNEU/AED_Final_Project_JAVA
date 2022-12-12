@@ -68,7 +68,6 @@ public class FireDepartmentRegistration extends javax.swing.JPanel {
         phoneTxt = new javax.swing.JTextField();
         locationInputField = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
         addressInput = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -161,24 +160,12 @@ public class FireDepartmentRegistration extends javax.swing.JPanel {
         jPanel7.add(phoneTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 510, 420, 40));
 
         locationInputField.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
-        jPanel7.add(locationInputField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 210, 40));
+        jPanel7.add(locationInputField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 350, 40));
 
         jLabel8.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(73, 84, 90));
         jLabel8.setText("Location");
         jPanel7.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 220, -1));
-
-        jButton4.setBackground(new java.awt.Color(255, 55, 95));
-        jButton4.setFont(new java.awt.Font("SF Pro Text", 1, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Search");
-        jButton4.setBorder(null);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPanel7.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 190, 150, 39));
 
         addressInput.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
         jPanel7.add(addressInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 420, 40));
@@ -383,21 +370,12 @@ public class FireDepartmentRegistration extends javax.swing.JPanel {
         locationInputField.setText(locationPoint.getLatitudeCoordinate() + ", " + locationPoint.getLongitudeCoordinate());
     }
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-        MapViewr oLJP = new MapViewr(rightSidePanel);
-        rightSidePanel.add("MapViewr", oLJP);
-        CardLayout layout = (CardLayout) rightSidePanel.getLayout();
-        layout.next(rightSidePanel);
-    }//GEN-LAST:event_jButton4ActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addButton;
     private javax.swing.JTextField addressInput;
     private javax.swing.JButton cancelButton;
     private javax.swing.JTextField firstNameTxt;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

@@ -154,7 +154,7 @@ public class AmbulanceRegistration extends javax.swing.JPanel {
 
         jLabel7.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(73, 84, 90));
-        jLabel7.setText("First Name");
+        jLabel7.setText("Ambulance Name");
         jPanel7.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 220, -1));
 
         locationTxt.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
@@ -162,7 +162,7 @@ public class AmbulanceRegistration extends javax.swing.JPanel {
 
         jLabel8.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(73, 84, 90));
-        jLabel8.setText("Last Name");
+        jLabel8.setText("Driver Name");
         jPanel7.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 220, -1));
 
         firstNameTxt.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
