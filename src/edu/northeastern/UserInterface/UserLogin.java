@@ -83,6 +83,7 @@ public class UserLogin extends javax.swing.JPanel {
         signUpButton = new javax.swing.JButton();
         passwordTextField = new javax.swing.JPasswordField();
         jLabel8 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(1920, 1080));
@@ -114,10 +115,10 @@ public class UserLogin extends javax.swing.JPanel {
         jPanel1.add(userNameTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 450, 48));
 
         jLabel5.setBackground(new java.awt.Color(204, 204, 255));
-        jLabel5.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Password");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 200, -1));
+        jLabel5.setFont(new java.awt.Font("Bahnschrift", 0, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel5.setText(" Altaf  Aziz  Satyajit :)");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 550, 260, -1));
 
         loginButton.setBackground(new java.awt.Color(255, 255, 255));
         loginButton.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
@@ -130,12 +131,12 @@ public class UserLogin extends javax.swing.JPanel {
                 loginButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 400, 450, 50));
+        jPanel1.add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 450, 50));
 
         jLabel7.setFont(new java.awt.Font("Bahnschrift", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(204, 204, 204));
         jLabel7.setText(" Register ->");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 490, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 440, -1, -1));
 
         signUpButton.setBackground(new java.awt.Color(0, 0, 0));
         signUpButton.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
@@ -148,7 +149,7 @@ public class UserLogin extends javax.swing.JPanel {
                 signUpButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(signUpButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 470, 240, 50));
+        jPanel1.add(signUpButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 420, 240, 50));
 
         passwordTextField.setBackground(new java.awt.Color(35, 36, 41));
         passwordTextField.setFont(new java.awt.Font("Bahnschrift", 0, 13)); // NOI18N
@@ -166,9 +167,15 @@ public class UserLogin extends javax.swing.JPanel {
         jLabel8.setFont(new java.awt.Font("Bahnschrift", 0, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(153, 153, 153));
         jLabel8.setText("Not registered yet?  ");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, -1, -1));
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 200, 530, 570));
+        jLabel6.setBackground(new java.awt.Color(204, 204, 255));
+        jLabel6.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Password");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 200, -1));
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 200, 530, 580));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/black triangle.jpg"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 1080));
@@ -381,6 +388,7 @@ public class UserLogin extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
