@@ -37,14 +37,14 @@ public class UserRegister extends javax.swing.JPanel {
         Notification notification = new Notification();
         String toEmail = emailTextField.getText();
         String emailSubject = "User Account Created!!";
-        String emailContent = "Welcome to SafeTogether"; 
+        String emailContent = "Welcome to Be Well Application !!!"; 
         notification.sendMail(toEmail, emailSubject, emailContent);
     }
 
     public void sendSMS() {
         Notification notification = new Notification();
         String toPhone = phoneTextField.getText();
-        String smsContent = "Welcome to SafeTogether" + firstNameTextField.getText() + " " + lastNameTextField.getText();
+        String smsContent = "Welcome to Be Well Application" + firstNameTextField.getText() + " " + lastNameTextField.getText();
         notification.sendSms(toPhone, smsContent);
     }
     /**
