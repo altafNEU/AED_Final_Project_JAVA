@@ -50,7 +50,6 @@ public class DoctorRegistration extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         hosCount = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -65,7 +64,6 @@ public class DoctorRegistration extends javax.swing.JPanel {
         addbutton = new javax.swing.JButton();
         updateButton = new javax.swing.JButton();
         deleteButton = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         userNameTextField3 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
@@ -78,32 +76,34 @@ public class DoctorRegistration extends javax.swing.JPanel {
         userNameTextField7 = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         userNameTextField8 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         splCount = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(250, 249, 251));
         setPreferredSize(new java.awt.Dimension(1160, 750));
         setLayout(new java.awt.CardLayout());
 
-        jPanel1.setBackground(new java.awt.Color(250, 249, 251));
+        jPanel1.setBackground(new java.awt.Color(35, 36, 41));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("SF Pro Display", 1, 24)); // NOI18N
-        jLabel1.setText("Dashboard");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 31, -1, -1));
-
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(35, 36, 41));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        hosCount.setBackground(new java.awt.Color(204, 153, 0));
         hosCount.setFont(new java.awt.Font("SF Pro Display", 1, 64)); // NOI18N
+        hosCount.setForeground(new java.awt.Color(204, 153, 0));
         hosCount.setText("10");
         jPanel2.add(hosCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 80, 90));
 
+        jLabel6.setBackground(new java.awt.Color(204, 153, 0));
         jLabel6.setFont(new java.awt.Font("Lucida Grande", 1, 30)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(204, 153, 0));
         jLabel6.setText("Hospitals");
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, -1, -1));
 
@@ -158,7 +158,7 @@ public class DoctorRegistration extends javax.swing.JPanel {
 
         jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, 580, 370));
 
-        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel7.setBackground(new java.awt.Color(35, 36, 41));
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         addbutton.setBackground(new java.awt.Color(10, 132, 255));
@@ -197,24 +197,20 @@ public class DoctorRegistration extends javax.swing.JPanel {
         });
         jPanel7.add(deleteButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 580, 140, 39));
 
-        jLabel2.setFont(new java.awt.Font("SF Pro Display", 1, 36)); // NOI18N
-        jLabel2.setText("Enter Details");
-        jPanel7.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 300, 50));
-
-        jLabel7.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(73, 84, 90));
+        jLabel7.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Name");
         jPanel7.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 220, -1));
 
-        userNameTextField3.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
+        userNameTextField3.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
         jPanel7.add(userNameTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 420, 40));
 
-        jLabel8.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(73, 84, 90));
+        jLabel8.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Hospital");
         jPanel7.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 220, -1));
 
-        userNameTextField4.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
+        userNameTextField4.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
         userNameTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 userNameTextField4ActionPerformed(evt);
@@ -222,48 +218,57 @@ public class DoctorRegistration extends javax.swing.JPanel {
         });
         jPanel7.add(userNameTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 420, 40));
 
-        userNameTextField5.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
+        userNameTextField5.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
         jPanel7.add(userNameTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 420, 40));
 
-        jLabel9.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(73, 84, 90));
+        jLabel9.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Specializations");
         jPanel7.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 220, -1));
 
-        userNameTextField6.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
+        userNameTextField6.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
         jPanel7.add(userNameTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 420, 40));
 
-        jLabel10.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(73, 84, 90));
+        jLabel10.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("User ID");
         jPanel7.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 220, -1));
 
-        jLabel11.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(73, 84, 90));
+        jLabel11.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Password");
         jPanel7.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 220, -1));
 
-        userNameTextField7.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
+        userNameTextField7.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
         jPanel7.add(userNameTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, 420, 40));
 
-        jLabel12.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(73, 84, 90));
+        jLabel12.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Phone Number");
         jPanel7.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, 220, -1));
 
-        userNameTextField8.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
+        userNameTextField8.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
         jPanel7.add(userNameTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 510, 420, 40));
+
+        jLabel2.setFont(new java.awt.Font("Bahnschrift", 0, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel2.setText("Create/Modify User Details");
+        jPanel7.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 470, 50));
 
         jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 90, 470, 630));
 
-        jPanel8.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel8.setBackground(new java.awt.Color(35, 36, 41));
         jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        splCount.setBackground(new java.awt.Color(204, 153, 0));
         splCount.setFont(new java.awt.Font("SF Pro Display", 1, 64)); // NOI18N
+        splCount.setForeground(new java.awt.Color(204, 153, 0));
         splCount.setText("10");
         jPanel8.add(splCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, 80, 90));
 
+        jLabel4.setBackground(new java.awt.Color(204, 153, 0));
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 30)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 153, 0));
         jLabel4.setText("Specializations");
         jPanel8.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
 
@@ -282,6 +287,11 @@ public class DoctorRegistration extends javax.swing.JPanel {
         jPanel8.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, -1, -1));
 
         jPanel1.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, 270, 220));
+
+        jLabel1.setFont(new java.awt.Font("Bahnschrift", 0, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 153, 0));
+        jLabel1.setText("Dashboard");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 31, -1, -1));
 
         add(jPanel1, "card2");
     }// </editor-fold>//GEN-END:initComponents

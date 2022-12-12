@@ -82,61 +82,80 @@ public class UserLogin extends javax.swing.JPanel {
         jLabel7 = new javax.swing.JLabel();
         signUpButton = new javax.swing.JButton();
         passwordTextField = new javax.swing.JPasswordField();
+        jLabel8 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(1920, 1080));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(35, 36, 41));
+        jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.setToolTipText("");
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Bahnschrift", 0, 36)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel3.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel3.setFont(new java.awt.Font("Bahnschrift", 0, 39)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("LOGIN ");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, -1, -1));
 
+        jLabel4.setBackground(new java.awt.Color(204, 204, 255));
         jLabel4.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(73, 84, 90));
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Username");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 200, -1));
 
-        userNameTextField.setBackground(new java.awt.Color(248, 248, 249));
+        userNameTextField.setBackground(new java.awt.Color(35, 36, 41));
+        userNameTextField.setFont(new java.awt.Font("Bahnschrift", 0, 13)); // NOI18N
+        userNameTextField.setForeground(new java.awt.Color(255, 153, 0));
+        userNameTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        userNameTextField.setDisabledTextColor(new java.awt.Color(35, 36, 41));
+        userNameTextField.setSelectionColor(new java.awt.Color(35, 36, 41));
         jPanel1.add(userNameTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 450, 48));
 
+        jLabel5.setBackground(new java.awt.Color(204, 204, 255));
         jLabel5.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(73, 84, 90));
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Password");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 200, -1));
 
-        loginButton.setBackground(new java.awt.Color(204, 204, 204));
+        loginButton.setBackground(new java.awt.Color(255, 255, 255));
         loginButton.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
         loginButton.setForeground(new java.awt.Color(0, 0, 0));
         loginButton.setText("Login");
+        loginButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        loginButton.setDebugGraphicsOptions(javax.swing.DebugGraphics.BUFFERED_OPTION);
         loginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 450, 50));
+        jPanel1.add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 400, 450, 50));
 
-        jLabel7.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(73, 84, 90));
-        jLabel7.setText("New User ? Click Register Button");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 490, -1, -1));
+        jLabel7.setFont(new java.awt.Font("Bahnschrift", 0, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel7.setText(" Register ->");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 490, -1, -1));
 
         signUpButton.setBackground(new java.awt.Color(0, 0, 0));
         signUpButton.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
         signUpButton.setForeground(new java.awt.Color(204, 204, 204));
         signUpButton.setText("Register");
         signUpButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        signUpButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         signUpButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 signUpButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(signUpButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, 450, 50));
+        jPanel1.add(signUpButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 470, 240, 50));
 
-        passwordTextField.setBackground(new java.awt.Color(248, 248, 249));
+        passwordTextField.setBackground(new java.awt.Color(35, 36, 41));
+        passwordTextField.setFont(new java.awt.Font("Bahnschrift", 0, 13)); // NOI18N
+        passwordTextField.setForeground(new java.awt.Color(255, 153, 0));
+        passwordTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        passwordTextField.setDisabledTextColor(new java.awt.Color(35, 36, 41));
+        passwordTextField.setSelectionColor(new java.awt.Color(35, 36, 41));
         passwordTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 passwordTextFieldActionPerformed(evt);
@@ -144,9 +163,14 @@ public class UserLogin extends javax.swing.JPanel {
         });
         jPanel1.add(passwordTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 450, 50));
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 200, 530, 520));
+        jLabel8.setFont(new java.awt.Font("Bahnschrift", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel8.setText("Not registered yet?  ");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/black_grunge_hd_grunge-1920x1080.jpg"))); // NOI18N
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 200, 530, 570));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/black triangle.jpg"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 1080));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -358,6 +382,7 @@ public class UserLogin extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton loginButton;
     private javax.swing.JPasswordField passwordTextField;

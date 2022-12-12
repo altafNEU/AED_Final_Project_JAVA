@@ -110,7 +110,7 @@ public class EmergencyEnterprises extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(1920, 1080));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(245, 245, 245));
+        jPanel1.setBackground(new java.awt.Color(35, 36, 41));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
@@ -152,8 +152,9 @@ public class EmergencyEnterprises extends javax.swing.JPanel {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Icons/icons8-ambulance-24.png"))); // NOI18N
         ambulancePanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 30, -1));
 
+        jLabel6.setBackground(new java.awt.Color(0, 0, 0));
         jLabel6.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(115, 120, 128));
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Ambulance");
         ambulancePanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, -1, -1));
 
@@ -171,8 +172,9 @@ public class EmergencyEnterprises extends javax.swing.JPanel {
         jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Icons/icons8-police-24.png"))); // NOI18N
         fireDeptPanel.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 30, -1));
 
+        jLabel26.setBackground(new java.awt.Color(0, 0, 0));
         jLabel26.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(115, 120, 128));
+        jLabel26.setForeground(new java.awt.Color(0, 0, 0));
         jLabel26.setText("Fire Department");
         fireDeptPanel.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, -1, -1));
 
@@ -190,8 +192,9 @@ public class EmergencyEnterprises extends javax.swing.JPanel {
         jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Icons/icons8-city-buildings-24.png"))); // NOI18N
         policePanel.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 30, -1));
 
+        jLabel24.setBackground(new java.awt.Color(0, 0, 0));
         jLabel24.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(115, 120, 128));
+        jLabel24.setForeground(new java.awt.Color(0, 0, 0));
         jLabel24.setText("Police");
         policePanel.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, -1, -1));
 
@@ -206,21 +209,26 @@ public class EmergencyEnterprises extends javax.swing.JPanel {
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        timeLabel.setBackground(new java.awt.Color(0, 0, 0));
         timeLabel.setFont(new java.awt.Font("SF Pro Display", 1, 36)); // NOI18N
+        timeLabel.setForeground(new java.awt.Color(0, 0, 0));
         timeLabel.setText("3:45 PM");
         jPanel6.add(timeLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 20, -1, -1));
 
+        jLabel10.setBackground(new java.awt.Color(0, 0, 0));
         jLabel10.setFont(new java.awt.Font("SF Pro Display", 1, 36)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Emergency");
         jPanel6.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
-        jLabel1.setForeground(new java.awt.Color(152, 151, 151));
+        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Manage everything related to Emergency Enterprises");
         jPanel6.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
 
         jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 0, 1630, 90));
 
-        rightSidePanel.setBackground(new java.awt.Color(250, 249, 251));
+        rightSidePanel.setBackground(new java.awt.Color(35, 36, 41));
         rightSidePanel.setLayout(new java.awt.CardLayout());
         jPanel1.add(rightSidePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, 1160, 750));
 

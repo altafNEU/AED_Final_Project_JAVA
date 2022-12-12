@@ -26,7 +26,7 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="f5" green="f5" red="f5" type="rgb"/>
+          <Color blue="29" green="24" red="23" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
@@ -263,7 +263,7 @@
         <Container class="javax.swing.JPanel" name="rightSidePanel">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="fb" green="f9" red="fa" type="rgb"/>
+              <Color blue="29" green="24" red="23" type="rgb"/>
             </Property>
           </Properties>
           <Constraints>

@@ -76,6 +76,7 @@ public class UserRegister extends javax.swing.JPanel {
         loginButton = new javax.swing.JButton();
         signUpButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(1920, 1080));
 
@@ -84,13 +85,13 @@ public class UserRegister extends javax.swing.JPanel {
 
         jLabel2.setFont(new java.awt.Font("Bahnschrift", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel2.setText("Let's Register your New Account");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 370, 60));
+        jLabel2.setText(" New Account");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 410, 170, 60));
 
         jLabel3.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(73, 84, 90));
         jLabel3.setText("Check your email inbox after registration");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 840, 290, 30));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 730, 290, 30));
 
         jLabel4.setBackground(new java.awt.Color(204, 0, 51));
         jLabel4.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
@@ -165,7 +166,7 @@ public class UserRegister extends javax.swing.JPanel {
                 loginButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 760, 190, 60));
+        jPanel2.add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 800, 190, 60));
 
         signUpButton.setBackground(new java.awt.Color(0, 0, 0));
         signUpButton.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
@@ -177,7 +178,7 @@ public class UserRegister extends javax.swing.JPanel {
                 signUpButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(signUpButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 760, 179, 60));
+        jPanel2.add(signUpButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 720, 190, 60));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/doctor shake hand.jpg"))); // NOI18N
@@ -187,18 +188,22 @@ public class UserRegister extends javax.swing.JPanel {
         jLabel1.setPreferredSize(new java.awt.Dimension(500, 1080));
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 0, 1440, 1190));
 
+        jLabel11.setFont(new java.awt.Font("Bahnschrift", 0, 24)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel11.setText("Let's Register your ");
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 370, 60));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 5165, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 2282, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -267,6 +272,7 @@ public class UserRegister extends javax.swing.JPanel {
     private javax.swing.JTextField firstNameTextField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

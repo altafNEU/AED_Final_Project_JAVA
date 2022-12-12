@@ -54,7 +54,6 @@ public class BloodRegistration extends javax.swing.JPanel {
         addButton = new javax.swing.JButton();
         updateButton = new javax.swing.JButton();
         deleteButton = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         userNameTextField4 = new javax.swing.JTextField();
         userNameTextField5 = new javax.swing.JTextField();
@@ -65,15 +64,17 @@ public class BloodRegistration extends javax.swing.JPanel {
         userNameTextField7 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         locationInputField = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(250, 249, 251));
+        setBackground(new java.awt.Color(35, 36, 41));
         setPreferredSize(new java.awt.Dimension(1160, 750));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(250, 249, 251));
+        jPanel1.setBackground(new java.awt.Color(35, 36, 41));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("SF Pro Display", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Bahnschrift", 0, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 153, 0));
         jLabel1.setText("Dashboard");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 31, -1, -1));
 
@@ -107,7 +108,7 @@ public class BloodRegistration extends javax.swing.JPanel {
 
         jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 580, 630));
 
-        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel7.setBackground(new java.awt.Color(35, 36, 41));
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         addButton.setBackground(new java.awt.Color(10, 132, 255));
@@ -146,54 +147,55 @@ public class BloodRegistration extends javax.swing.JPanel {
         });
         jPanel7.add(deleteButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 580, 140, 39));
 
-        jLabel2.setFont(new java.awt.Font("SF Pro Display", 1, 36)); // NOI18N
-        jLabel2.setText("Enter Details");
-        jPanel7.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 300, 50));
-
-        jLabel7.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(73, 84, 90));
+        jLabel7.setFont(new java.awt.Font("Bahnschrift", 0, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(204, 204, 204));
         jLabel7.setText("Name");
         jPanel7.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 220, -1));
 
-        userNameTextField4.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
+        userNameTextField4.setFont(new java.awt.Font("Bahnschrift", 0, 14)); // NOI18N
         jPanel7.add(userNameTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 420, 40));
 
-        userNameTextField5.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
+        userNameTextField5.setFont(new java.awt.Font("Bahnschrift", 0, 14)); // NOI18N
         jPanel7.add(userNameTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 420, 40));
 
-        jLabel9.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(73, 84, 90));
+        jLabel9.setFont(new java.awt.Font("Bahnschrift", 0, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(204, 204, 204));
         jLabel9.setText("User ID");
         jPanel7.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 220, -1));
 
-        userNameTextField6.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
+        userNameTextField6.setFont(new java.awt.Font("Bahnschrift", 0, 14)); // NOI18N
         jPanel7.add(userNameTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 420, 40));
 
-        jLabel10.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(73, 84, 90));
+        jLabel10.setFont(new java.awt.Font("Bahnschrift", 0, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(204, 204, 204));
         jLabel10.setText("Password");
         jPanel7.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 220, -1));
 
-        jLabel11.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(73, 84, 90));
+        jLabel11.setFont(new java.awt.Font("Bahnschrift", 0, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(204, 204, 204));
         jLabel11.setText("Phone Number");
         jPanel7.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 220, -1));
 
-        userNameTextField7.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
+        userNameTextField7.setFont(new java.awt.Font("Bahnschrift", 0, 14)); // NOI18N
         jPanel7.add(userNameTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, 420, 40));
 
-        jLabel8.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(73, 84, 90));
+        jLabel8.setFont(new java.awt.Font("Bahnschrift", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(204, 204, 204));
         jLabel8.setText("Location");
         jPanel7.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 220, -1));
 
-        locationInputField.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
+        locationInputField.setFont(new java.awt.Font("Bahnschrift", 0, 14)); // NOI18N
         locationInputField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 locationInputFieldActionPerformed(evt);
             }
         });
         jPanel7.add(locationInputField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 420, 40));
+
+        jLabel2.setFont(new java.awt.Font("Bahnschrift", 0, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel2.setText("Create/Modify User Details");
+        jPanel7.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 470, 50));
 
         jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 90, 470, 630));
 

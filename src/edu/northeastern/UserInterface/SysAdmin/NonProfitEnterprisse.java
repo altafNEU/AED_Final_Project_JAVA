@@ -102,7 +102,7 @@ public class NonProfitEnterprisse extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(1920, 1080));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(245, 245, 245));
+        jPanel1.setBackground(new java.awt.Color(35, 36, 41));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
@@ -174,7 +174,7 @@ public class NonProfitEnterprisse extends javax.swing.JPanel {
 
         jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 0, 1630, 90));
 
-        rightSidePanel.setBackground(new java.awt.Color(250, 249, 251));
+        rightSidePanel.setBackground(new java.awt.Color(35, 36, 41));
         rightSidePanel.setLayout(new java.awt.CardLayout());
         jPanel1.add(rightSidePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, 1160, 750));
 
