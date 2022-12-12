@@ -279,7 +279,7 @@ public class EmergencyReport extends javax.swing.JPanel {
 
     public void sendmail(String subject, String content) {
         Notification notification = new Notification();
-        String toEmail = "aedproject22@gmail.com";
+        String toEmail = "satyajitds5@gmail.com";
         String emailSubject = subject;
         String emailContent = content;
         notification.sendMail(toEmail, emailSubject, emailContent);

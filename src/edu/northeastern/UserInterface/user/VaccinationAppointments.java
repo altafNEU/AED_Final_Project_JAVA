@@ -47,7 +47,7 @@ public class VaccinationAppointments extends javax.swing.JPanel {
   public  void sendmail()
     {   
         Notification notification = new Notification();
-        String toEmail = "aedproject22@gmail.com";
+        String toEmail = "satyajitds5@gmail.com";
         String emailSubject = "Vaccination Registration Status!!";
         String emailContent = "You have successfully registered for vaccination drive, please wait for 24hrs to have more details. "; 
         notification.sendMail(toEmail, emailSubject, emailContent);

@@ -173,7 +173,7 @@ public class UserAreaJPanel extends javax.swing.JPanel {
 
         jLabel15.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(115, 120, 128));
-        jLabel15.setText("Parmacy");
+        jLabel15.setText("Pharmacy");
         medicine.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, -1, -1));
 
         jPanel3.add(medicine, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 340, 290, 60));

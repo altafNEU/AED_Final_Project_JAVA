@@ -253,7 +253,7 @@ public class BloodDonations extends javax.swing.JPanel {
     
     public void sendmail() {
         Notification notification = new Notification();
-        String toEmail = "aedproject22@gmail.com";
+        String toEmail = "satyajitds5@gmail.com";
         String emailSubject = "Blood Donation";
         String emailContent = "Successfully booked your blood donation appointment!!";
         notification.sendMail(toEmail, emailSubject, emailContent);

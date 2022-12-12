@@ -49,7 +49,6 @@ public class PoliceDisplay extends javax.swing.JPanel {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        locationButton = new javax.swing.JButton();
         closeCaseButton = new javax.swing.JButton();
         respondButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -66,18 +65,6 @@ public class PoliceDisplay extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("SF Pro Display", 1, 24)); // NOI18N
         jLabel1.setText("Police Details");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 31, -1, -1));
-
-        locationButton.setBackground(new java.awt.Color(172, 142, 104));
-        locationButton.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
-        locationButton.setForeground(new java.awt.Color(255, 255, 255));
-        locationButton.setText("View Location");
-        locationButton.setBorder(null);
-        locationButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                locationButtonActionPerformed(evt);
-            }
-        });
-        jPanel1.add(locationButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 590, 180, 50));
 
         closeCaseButton.setBackground(new java.awt.Color(255, 69, 58));
         closeCaseButton.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
@@ -146,12 +133,6 @@ public class PoliceDisplay extends javax.swing.JPanel {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    private void locationButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_locationButtonActionPerformed
-        // TODO add your handling code here:
-//        showMap();
-
-    }//GEN-LAST:event_locationButtonActionPerformed
 
     private void showMap() {
 //        // TODO add your handling code here:
@@ -282,7 +263,6 @@ public class PoliceDisplay extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JButton locationButton;
     private javax.swing.JButton respondButton;
     // End of variables declaration//GEN-END:variables
 }
