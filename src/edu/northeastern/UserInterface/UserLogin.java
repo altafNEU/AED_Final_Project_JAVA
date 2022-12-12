@@ -175,10 +175,10 @@ public class UserLogin extends javax.swing.JPanel {
         jLabel6.setText("Password");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 200, -1));
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 200, 530, 580));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 160, 530, 580));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/black triangle.jpg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 1080));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1920, 1080));
     }// </editor-fold>//GEN-END:initComponents
 
     private void passwordTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordTextFieldActionPerformed
