@@ -75,7 +75,6 @@ public class EmergencyReport extends javax.swing.JPanel {
         jLabel9 = new javax.swing.JLabel();
         emergencyBox = new javax.swing.JComboBox<>();
         locationInputField = new javax.swing.JTextField();
-        searchButton = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(250, 249, 251));
@@ -163,19 +162,7 @@ public class EmergencyReport extends javax.swing.JPanel {
         jPanel7.add(emergencyBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 420, 40));
 
         locationInputField.setFont(new java.awt.Font("SF Pro Text", 0, 14)); // NOI18N
-        jPanel7.add(locationInputField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 220, 40));
-
-        searchButton.setBackground(new java.awt.Color(255, 55, 95));
-        searchButton.setFont(new java.awt.Font("SF Pro Text", 1, 14)); // NOI18N
-        searchButton.setForeground(new java.awt.Color(255, 255, 255));
-        searchButton.setText("Search");
-        searchButton.setBorder(null);
-        searchButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchButtonActionPerformed(evt);
-            }
-        });
-        jPanel7.add(searchButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, 150, 39));
+        jPanel7.add(locationInputField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 420, 40));
 
         jLabel8.setFont(new java.awt.Font("SF Pro Text", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(73, 84, 90));
@@ -222,14 +209,6 @@ public class EmergencyReport extends javax.swing.JPanel {
     }
     
     
-    private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButtonActionPerformed
-        // TODO add your handling code here:
-        MapViewr oLJP = new MapViewr(rightSidePanel);
-        rightSidePanel.add("MapViewr", oLJP);
-        CardLayout layout = (CardLayout) rightSidePanel.getLayout();
-        layout.next(rightSidePanel);
-    }//GEN-LAST:event_searchButtonActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton cancelButton;
@@ -247,7 +226,6 @@ public class EmergencyReport extends javax.swing.JPanel {
     private javax.swing.JLabel lastNameLabel;
     private javax.swing.JTextField locationInputField;
     private javax.swing.JButton reportButton;
-    private javax.swing.JButton searchButton;
     private javax.swing.JTable tblEmergency;
     // End of variables declaration//GEN-END:variables
 
